@@ -48,6 +48,11 @@ body{
 .btn:hover{
     letter-spacing: 2px;
 }
+header.sticky{
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
 header{
     position: fixed;
     top: 0;
@@ -63,6 +68,9 @@ header{
 header .logo{
     font-size: 3em;
     text-transform: uppercase;
+}
+header.sticky .logo a{
+    color: var(--ElPaso);
 }
 header .logo a{
     text-decoration: none;
@@ -83,6 +91,12 @@ header .logo span{
 .navigation  nav ul li a{
     text-decoration: none;
     color: white;
+}
+header.sticky .navigation li a{
+    color: #ba742f;
+}
+header.sticky .navigation li a:hover{
+    color: var(--ElPaso);
 }
 .navigation  nav ul li a:hover{
     color: #ba742f;
