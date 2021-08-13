@@ -299,3 +299,63 @@ header.sticky .navigation nav ul li .sgp:hover{
         width: 100%;
     }
 }
+
+
+/*Estilização do footer*/
+.rodape{
+    width: 100%;
+    min-height: 50vh;
+    background-color: var(--ElPaso);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+.box.last-box{
+    margin: 0;
+}
+.rodape .content .last-box{
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    margin-right: 50px;
+}
+.rodape .content .last-box h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--LightBrown);
+    font-weight: bold;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+.rodape .content .last-box .links ul{
+    list-style: none;
+}
+.rodape .content .last-box .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape .content .last-box .links ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+.rodape .content .last-box .links ul li a:hover{
+    opacity: 0.6;
+}
+.copyright{
+    padding: 15px;
+}
+.copyright h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+.copyright h5 a{
+    text-decoration: none;
+    color: var(--LightBrown);
+}
