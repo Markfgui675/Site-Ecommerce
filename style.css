@@ -8,14 +8,12 @@
     --TobaccoBrown: #6e553c;
     --LightBrown: #ba742f;
 }
-body{
-    min-height: 2000px;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Crete Round';
+    scroll-behavior: smooth;
 }
 
 .banner{
@@ -109,4 +107,76 @@ header.sticky .navigation li a:hover{
 header.sticky .navigation nav ul li .sgp:hover{
     background-color: var(--LightBrown);  
     color: white;  
+}
+
+
+/*Estilização do section Produtos*/
+.col-100{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .title h2{
+    margin: 50px;
+    font-size: 2.3em;
+    color: var(--Treehouse);
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgBx{
+    width: 250px;
+    height: 350px;
+    background-color: gray;
+}
+.options .o_options, .options_2 .o_options{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+.options .o_options .imgBx, .options_2 .o_options .imgBx img{
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+.options .o_options .imgBx img, .options_2 .o_options .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.o_options .info{
+    display: none;
+}
+.o_options:hover .info, .o_options:hover{
+    display: block;  
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.o_options .info h3{
+    text-align: center;
+    padding: 10px;
+    color: var(--LightBrown);
+}
+
+@media(max-width: 550px){
+    .options, .options_2{
+        flex-direction: column;
+    }
 }
