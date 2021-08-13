@@ -93,16 +93,20 @@ header .logo span{
     color: white;
 }
 header.sticky .navigation li a{
-    color: #ba742f;
+    color: var(--LightBrown);
 }
 header.sticky .navigation li a:hover{
     color: var(--ElPaso);
 }
 .navigation  nav ul li a:hover{
-    color: #ba742f;
+    color: var(--LightBrown);
 }
 .navigation  nav ul li .sgp{
-    border: 2px solid #ba742f;
+    border: 2px solid var(--LightBrown);
     padding: 10px;
     border-radius: 50px;
+}
+header.sticky .navigation nav ul li .sgp:hover{
+    background-color: var(--LightBrown);  
+    color: white;  
 }
