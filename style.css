@@ -149,6 +149,9 @@ header.sticky .navigation nav ul li .sgp:hover{
     padding: 10px;
     cursor: pointer;
 }
+.options .o_options a, .options_2 .o_options a{
+    text-decoration: none;
+}
 .options .o_options .imgBx, .options_2 .o_options .imgBx img{
     position: relative;
     width: 250px;
