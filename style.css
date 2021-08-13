@@ -175,8 +175,94 @@ header.sticky .navigation nav ul li .sgp:hover{
     color: var(--LightBrown);
 }
 
-@media(max-width: 550px){
+@media(max-width: 750px){
     .options, .options_2{
         flex-direction: column;
+    }
+}
+@media(max-width: 300px){
+    .options .o_options, .options_2 .o_options{
+        padding: 2px;
+        margin: 5px;        
+    }
+}
+
+
+/*Estilização do Section Quality*/
+.quality{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('imagens/imagem_fundo2.1.png');
+    background-repeat: no-repeat;
+}
+.quality .title{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quality .title h2{
+    color: white;
+    font-size: 2.3em;
+}
+.box{
+    display: flex;
+    padding: 15px;
+    margin-bottom: 120px;
+}
+.box .text{
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid white;
+}
+.box .text p{
+    color: white;
+    font-size: 1.4em;
+    padding: 25px;
+}
+.box .imgBx{
+    position: relative;
+    width: 45%;
+    height: 400px;
+}
+.box .imgBx img{
+    outline: absolute;            
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box.inverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.box.inverse .text{
+    border-left: 0px solid transparent;
+    border-right: 3px solid white;
+}
+
+@media(max-width: 490px){
+    .box{
+        flex-direction: column;
+    }
+    .box .text{
+        width: 100%;
+    }
+    .img-Bx{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+}
+@media(max-width: 300px){
+    .img-Bx2{
+        display: none;
     }
 }
