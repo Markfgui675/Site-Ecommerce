@@ -85,6 +85,7 @@ header .logo span{
     margin-top: 5px;
 }
 
+/*Responsividade do menu*/
 @media(max-width: 950px){
     header .navigation{
         display: none;
