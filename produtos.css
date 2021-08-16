@@ -211,6 +211,11 @@ main{
         padding: 20px;
     }
 }
+@media(max-width: 931px){
+    .tuxedo .container{
+        flex-direction: column;
+    }
+}
 @media(max-width: 556px){
     header{
         padding: 20px 80px;
