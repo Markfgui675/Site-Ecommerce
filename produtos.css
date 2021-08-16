@@ -14,9 +14,6 @@
     box-sizing: border-box;
     font-family: 'Crete Round';
 }
-body{
-    height: 2000px;
-}
 
 header{
     position: fixed;
