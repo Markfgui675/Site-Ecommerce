@@ -151,6 +151,12 @@ header .logo span{
     header{
         padding: 20px 80px;
     }
+    .navigation nav ul .ini_sub-menu2{
+        font-size: 1.2em;
+    }
+    header .navigation li a{
+        font-size: 1.2em;
+    }
 }
 @media(max-width: 463px){
     header{
@@ -159,6 +165,17 @@ header .logo span{
     header .logo{
         font-size: 2em;
     }
+    header .navigation.active, header .navigation nav ul{
+        width: 70%;
+        top: 60px;
+        left: 31%;
+    }
+    .navigation nav ul .ini_sub-menu2{
+        font-size: 1em;
+    }
+    header .navigation li a{
+        font-size: 1em;
+    }
 }
 @media(max-width: 300px){
     header{
@@ -166,5 +183,16 @@ header .logo span{
     }
     header .logo{
         font-size: 1.6em;
+    }
+    header .navigation.active, header .navigation nav ul{
+        width: 70%;
+        top: 50px;
+        left: 31%;
+    }
+    .navigation nav ul .ini_sub-menu2{
+        font-size: 0.7em;
+    }
+    header .navigation li a{
+        font-size: 0.7em;
     }
 }
