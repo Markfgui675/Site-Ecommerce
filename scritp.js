@@ -8,5 +8,3 @@ function toggleMenu(){
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
 }
-
-//Efeito para o nav-bar mobile
