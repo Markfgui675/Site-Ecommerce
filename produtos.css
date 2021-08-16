@@ -1,3 +1,133 @@
 @charset 'UTF-8';
 
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+:root{
+    --Treehouse: #3b2d20;
+    --ElPaso: #201408;
+    --TobaccoBrown: #6e553c;
+    --LightBrown: #ba742f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crete Round';
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 90px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+    background-color: var(--Treehouse);
+}
+header .logo{
+    text-transform: uppercase;
+}
+header .logo a{
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+}
+header .logo span{
+    font-size: 3em;
+    margin-left: 2px;
+    color: var(--LightBrown);
+}
+.navigation nav ul li{
+    color: white;
+    cursor: pointer;
+}
+.navigation nav ul li:hover{
+    color: var(--LightBrown);
+}
+.navigation nav ul{
+    display: flex;
+    list-style: none;
+}
+.navigation nav ul li{
+    padding: 5px;
+    margin: 10px;
+}
+.navigation nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navigation  nav ul li a:hover{
+    color: var(--LightBrown);
+}
+.navigation  nav ul li .sgp{
+    border: 2px solid var(--LightBrown);
+    padding: 10px;
+    border-radius: 50px;
+}
+.navigation nav ul .sub-menu{
+    background-color: var(--Treehouse);
+}
+.navigation nav ul .sub-menu li a{
+    color: var(--LightBrown);
+}
+.navigation nav ul .sub-menu{
+    display: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.navigation nav ul li:hover > .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+}
+.navigation nav ul .sub-menu li a:hover{
+    color: white;
+}
+
+/*Responsividade do menu*/
+@media(max-width: 950px){
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active, header .navigation nav ul{
+        width: 45%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--TobaccoBrown);
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('imagens/menu\ \(1\).png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url('imagens/close\ \(1\).png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    section{
+        padding: 20px;
+    }
+}
