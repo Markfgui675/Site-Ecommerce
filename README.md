@@ -1,4 +1,4 @@
-# Site-Ecommerce
+# Site - Ecommerce
 Repositório do Projeto Site - Ecommerce. 
 <br>
 
