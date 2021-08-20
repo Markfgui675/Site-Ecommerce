@@ -1,0 +1,376 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+:root{
+    --Treehouse: #3b2d20;
+    --ElPaso: #201408;
+    --TobaccoBrown: #6e553c;
+    --LightBrown: #ba742f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crete Round';
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: var(--ElPaso);
+}
+header.sticky{
+    background: var(--ElPaso);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+header .logo a{
+    text-decoration: none;
+    color: white;
+}
+header .logo span{
+    margin-left: 2px;
+    color: var(--LightBrown);
+}
+.navigation nav ul{
+    display: flex;
+    list-style: none;
+}
+.navigation  nav ul li{
+    margin: 10px;
+    padding: 5px;
+}
+.navigation  nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navigation nav ul .ini_sub-menu{
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.navigation nav ul .ini_sub-menu:hover{
+    color: var(--LightBrown)
+}
+.navigation nav ul .ini_sub-menu .sub-menu li a:hover{
+    color: var(--LightBrown)
+}
+.navigation  nav ul li a:hover{
+    color: var(--LightBrown);
+}
+.navigation  nav ul li .sgp{
+    border: 2px solid var(--LightBrown);
+    padding: 10px;
+    border-radius: 50px;
+}
+.navigation nav ul .ini_sub-menu .sub-menu, .navigation nav ul .ini_sub-menu .sub-menu2{
+    display: none;
+}
+.navigation nav ul .ini_sub-menu .sub-menu{
+    background-color: var(--ElPaso);
+}
+.navigation nav ul .ini_sub-menu:hover > .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+}
+
+
+/*Estilização do col-100*/
+.col-100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 150px;
+}
+.container .produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.container .produto .imgBx{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+}
+.container .produto .imgBx img{
+    outline: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .info{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .info .title h2{
+    font-size: 2.8em;
+    color: var(--ElPaso);
+}
+.container .info .descript{
+    width: 80%;
+}
+.container .info .descript article{
+    text-align: justify;
+}
+.container .info .btn{
+    background-color: var(--ElPaso);
+    padding: 20px;
+    transition-property: all;
+    transition-duration: .2s;
+}
+.container .info .btn:hover{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.815);
+    opacity: 0.8s;
+}
+.container .info .btn a{
+    text-decoration: none;
+    color: white;
+}
+.container .info .btn .line{
+    width: 80px;
+    height: 2px;
+    background-color: var(--LightBrown);
+}
+@media(max-width: 920px){
+    .container{
+        flex-direction: column;
+    }
+    .container{
+        padding: 10px;
+    }
+    .container .produto{
+        margin: 0;
+    }
+    .container .produto .imgBx{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/*Estilização do section More*/
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.more .title{
+    margin: 5px;
+}
+.more .title h2{
+    color: var(--LightBrown);
+    font-size: 2em;
+    padding: 5px;
+    border-bottom: 3px solid var(--Treehouse);
+}
+.more .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more .container .box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.more .container .box .imgBx{
+    position: relative;
+    width: 285px;
+    height: 185px;
+    background-color: gray;
+}
+.more .container .box .imgBx img{
+    outline: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.more .container .box .imgBx:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.603);
+}
+.more .container .box .titleBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more .container .box .titleBox h3 a{
+    color: var(--Treehouse);
+    font-size: 1.6em;
+    text-decoration: none;
+}
+@media(max-width: 920px){
+    .more .container{
+        flex-direction: column;
+    }
+}
+
+
+/*Rodape*/
+.rodape{
+    width: 100%;
+    min-height: 50vh;
+    background-color: var(--ElPaso);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+.box.last-box{
+    margin: 0;
+}
+.rodape .content .last-box{
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    margin-right: 50px;
+}
+.rodape .content .last-box h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--LightBrown);
+    font-weight: bold;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+.rodape .content .last-box .links ul{
+    list-style: none;
+}
+.rodape .content .last-box .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape .content .last-box .links ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+.rodape .content .last-box .links ul li a:hover{
+    opacity: 0.6;
+}
+.copyright{
+    padding: 15px;
+}
+.copyright h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+.copyright h5 a{
+    text-decoration: none;
+    color: var(--LightBrown);
+}
+@media(max-width: 640px){
+    .content{
+        flex-direction: column;
+    }
+}
+
+
+/*Responsividade do menu*/
+@media(max-width: 950px){
+    header.sticky{
+        padding: 10px 50px;
+    }
+    header{
+        padding: 30px 80px;
+    }
+    header .navigation{
+        display: none;
+    }
+    .navigation nav ul .ini_sub-menu2{
+        margin: 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.6em;
+    }
+    .navigation nav ul .ini_sub-menu2 .sub-menu2{
+        top: 175px;
+    }
+    .navigation nav ul .ini_sub-menu2 .sub-menu2 li a{
+        font-size: 0.8em
+    }
+    .navigation nav ul .ini_sub-menu2:hover{
+        color: var(--LightBrown)
+    }
+    header .navigation.active, header .navigation nav ul{
+        width: 50%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--ElPaso);
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('imagens/menu\ \(1\).png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .menuToggle.active{
+        background: url('imagens/close\ \(1\).png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 100;
+    }
+    section{
+        padding: 20px;
+    }
+}
