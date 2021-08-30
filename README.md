@@ -8,7 +8,7 @@ __*Ainda está em desenvolvimento*__
 
 - [x] Página Principal
 - [x] Página Produtos 1
-- [x] Página Produtos 2
+- [ ] Página Produtos 2
 - [ ] Página Pagamento
 - [ ] Página Carrinho
 - [ ] Página Usuário
